@@ -2,21 +2,21 @@
     <div class="container-fluid h-custom">
       <div class="row d-flex justify-content-center align-items-center h-100">
         <div class="col-md-9 col-lg-6 col-xl-5">
-          <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-login-form/draw2.webp"
-            class="img-fluid" alt="Sample image">
+          <img src="assets/images/hf-logo.svg"
+            class="img-fluid col-12" alt="Sample image">
         </div>
-        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1">
+        <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 p-5 rounded border">
           <form>
             <!-- Email input -->
             <div class="form-outline mb-4">
               <input type="email" id="form3Example3" class="form-control form-control-lg"
-                placeholder="Enter a valid email address" />
+                placeholder="Email ID" />
             </div>
   
             <!-- Password input -->
             <div class="form-outline mb-3">
               <input type="password" id="form3Example4" class="form-control form-control-lg"
-                placeholder="Enter password" />
+                placeholder="Password" />
             </div>
   
             <div class="d-flex justify-content-between align-items-center">
@@ -27,28 +27,10 @@
                   Remember me
                 </label>
               </div>
-              <a href="#!" class="text-body">Forgot password?</a>
             </div>
-  
             <div class="text-center text-lg-start mt-4 pt-2">
-              <button type="button" class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem;">Login</button>
+              <button type="button" class="btn btn-primary btn-lg px-5" [routerLink]="['dashboard']">Login</button>
             </div>
-  
-          </form>
-
-          <form>
-            <!-- Email input -->
-            <div class="form-outline mb-4">
-              <input type="email" id="form3Example3" class="form-control form-control-lg"
-                placeholder="Enter a valid email address" />
-            </div>
-  
-            <div class="text-center text-lg-start mt-4 pt-2">
-              <button type="button" class="btn btn-primary btn-lg"
-                style="padding-left: 2.5rem; padding-right: 2.5rem;">Submit</button>
-            </div>
-  
           </form>
         </div>
       </div>
