@@ -1,6 +1,7 @@
-@import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css" ;
 
 :root{
     --blue:#3062ad;
     --orange:#f2713f;
 }
+
