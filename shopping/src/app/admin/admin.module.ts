@@ -8,6 +8,7 @@ import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppNavComponent } from './app-nav/app-nav.component';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -17,11 +18,13 @@ import { AppNavComponent } from './app-nav/app-nav.component';
     DashboardComponent,
     AppHeaderComponent,
     AppNavComponent,
+
   ],
   // schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     CommonModule,
-    AdminRoutingModule
+    AdminRoutingModule,
+    MatIconModule
   ]
 })
 export class AdminModule { }
