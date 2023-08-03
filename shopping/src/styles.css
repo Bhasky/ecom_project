@@ -1,7 +1,18 @@
-@import "/node_modules/bootstrap/dist/css/bootstrap.min.css" ;
+@import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 
-:root{
-    --blue:#3062ad;
-    --orange:#f2713f;
+:root {
+    --blue: #3062ad;
+    --orange: #f2713f;
 }
 
+.offcanvas {
+    width: 200px !important;
+}
+
+/*Global Styles*/
+.btn-close:focus {
+    box-shadow: none !important;
+}
+.hf-btn:hover{
+    color:var(--orange)
+}
