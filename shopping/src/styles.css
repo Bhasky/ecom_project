@@ -4,9 +4,12 @@
     --blue: #3062ad;
     --orange: #f2713f;
 }
+body{
+    font-size:16px!important;
+}
 
 .offcanvas {
-    width: 200px !important;
+    width: 300px !important;
 }
 
 /*Global Styles*/

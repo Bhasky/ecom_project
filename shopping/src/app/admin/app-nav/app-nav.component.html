@@ -1,32 +1,63 @@
 <ng-template #content let-offcanvas style="width:100px;">
-  <div class="offcanvas-header justify-content-end">
+  <div class="offcanvas-header justify-content-end border-bottom justify-content-between">
+    <a href="" class="col-auto p-0 m-0 ps-2"><img src="assets/images/hf-logo.svg" class="top-logo" /></a>
     <button type="button" class="btn-close" aria-label="Close" (click)="offcanvas.dismiss('Cross click')"></button>
   </div>
   <div class="offcanvas-body">
     <div class="dropdown">
-      <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-mdb-toggle="dropdown"
-        aria-expanded="false">
-        Dropdown button
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>widgets</mat-icon>&nbsp; Dashboard
       </button>
-      <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-        <li><a class="dropdown-item" href="#">Action</a></li>
-        <li><a class="dropdown-item" href="#">Another action</a></li>
-        <li><a class="dropdown-item" href="#">Something else here</a></li>
-      </ul>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>package</mat-icon>&nbsp; Orders
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp; Billing
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>inventory</mat-icon>&nbsp; Inventory
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp; Products
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp;  Category
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp;  Sub Category
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp;  Quantity
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp;  Shipping Price
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp;  Growth
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp;  Address Printout
+      </button>
+      <button class="btn col-12 align-items-center d-flex" type="button">
+        <mat-icon>receipt_long</mat-icon>&nbsp;  User Email
+      </button>
     </div>
 
 
   </div>
 </ng-template>
 
-<div class="row m-0 p-0 border-bottom align-items-center shadow-sm p-2 justify-content-between">
+<div class="row m-0 p-0 border-bottom align-items-center shadow-sm p-2 justify-content-between fixed-top bg-white">
   <div class="col-auto m-0 p-0 flex-row align-items-center d-flex ">
     <button class="p-0 m-0 pt-1 col-auto border-0 align-items-center bg-white" (click)="open(content)">
       <mat-icon aria-hidden="false">menu</mat-icon>
     </button>
     <a href="" class="col-auto p-0 m-0 ps-2"><img src="assets/images/hf-logo.svg" class="top-logo" /></a>
   </div>
+  <div class="col-auto m-0 p-0 d-flex flex-row align-items-center">
+    <span class="col-auto m-0 p-0 pe-3 align-items-center d-flex"><mat-icon>account_circle</mat-icon>&nbsp; Welcome Admin</span>
   <button class="col-auto m-0 p-0 bg-white border-0 align-items-center d-flex hf-btn">
     <mat-icon>logout</mat-icon>&nbsp; Logout
   </button>
+</div>
 </div>
