@@ -1,5 +1,6 @@
 @import "/node_modules/bootstrap/dist/css/bootstrap.min.css";
 
+
 :root {
     --blue: #3062ad;
     --orange: #f2713f;
@@ -11,6 +12,8 @@ body{
 .offcanvas {
     width: 300px !important;
 }
+
+
 
 /*Global Styles*/
 .btn-close:focus {

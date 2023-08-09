@@ -1,3 +1,8 @@
 .top-logo {
     height: 35px;
 }
+
+.left-nav-menu button:hover{
+background-color: var(--orange);
+color:#fff;
+}
