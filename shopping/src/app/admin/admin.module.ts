@@ -9,6 +9,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppNavComponent } from './app-nav/app-nav.component';
 import { MatIconModule } from '@angular/material/icon';
+import { OrdersComponent } from './orders/orders.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { MatIconModule } from '@angular/material/icon';
     DashboardComponent,
     AppHeaderComponent,
     AppNavComponent,
+    OrdersComponent,
 
   ],
   // schemas: [ CUSTOM_ELEMENTS_SCHEMA],

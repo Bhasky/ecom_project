@@ -9,6 +9,7 @@ import { NgbDatepickerModule, NgbOffcanvas, OffcanvasDismissReasons } from '@ng-
   styleUrls: ['./app-nav.component.css']
 })
 export class AppNavComponent {
+	
   closeResult = '';
 
   constructor(private offcanvasService: NgbOffcanvas) {}

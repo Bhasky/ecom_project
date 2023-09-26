@@ -1,0 +1,10 @@
+.content-bg{
+    background-color: var(--bodybg);
+    height:100vh!important;
+}
+
+.dashboard .icon-bg{
+    background: rgba(253, 138, 20, 0.2);
+    border-radius: 50%;
+    padding: 10px;
+}

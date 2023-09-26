@@ -5,11 +5,11 @@
   </div>
   <div class="offcanvas-body">
     <div class="dropdown left-nav-menu">
-      <button class="btn col-12 align-items-center d-flex mb-2" type="button">
+      <button class="btn col-12 align-items-center d-flex mb-2" type="button" [routerLink]="['dashboard']">
         <mat-icon class="material-icons-outlined">widgets</mat-icon>&nbsp; Dashboard
       </button>
-      <button class="btn col-12 align-items-center d-flex mb-2" type="button">
-        <mat-icon class="material-icons-outlined">shopping_bag</mat-icon>&nbsp; Orders
+      <button class="btn col-12 align-items-center d-flex mb-2" type="button" [routerLink]="['/orders']">
+        <mat-icon class="material-icons-outlined">local_mall</mat-icon>&nbsp; Orders
       </button>
       <button class="btn col-12 align-items-center d-flex mb-2" type="button">
         <mat-icon class="material-icons-outlined">receipt_long</mat-icon>&nbsp; Billing
@@ -37,6 +37,12 @@
       </button>
       <button class="btn col-12 align-items-center d-flex mb-2" type="button">
         <mat-icon class="material-icons-outlined">contact_mail</mat-icon>&nbsp;  Address Printout
+      </button>
+      <button class="btn col-12 align-items-center d-flex mb-2" type="button">
+        <mat-icon class="material-icons-outlined">sell</mat-icon>&nbsp;  Coupons
+      </button>
+      <button class="btn col-12 align-items-center d-flex mb-2" type="button">
+        <mat-icon class="material-icons-outlined">sentiment_dissatisfied</mat-icon>&nbsp;  Customer Complaint
       </button>
       <button class="btn col-12 align-items-center d-flex mb-2" type="button">
         <mat-icon class="material-icons-outlined">mail</mat-icon>&nbsp;  User Email
