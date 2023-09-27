@@ -30,3 +30,7 @@ body{
 .text-blue{
     color:var(--blue)
 }
+.content-bg{
+    background-color: var(--bodybg);
+    height:100vh!important;
+}

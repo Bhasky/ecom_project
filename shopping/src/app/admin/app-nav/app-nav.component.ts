@@ -1,5 +1,6 @@
 import { Component, ViewChild } from '@angular/core';
 import { NgbDatepickerModule, NgbOffcanvas, OffcanvasDismissReasons } from '@ng-bootstrap/ng-bootstrap';
+import { Router } from '@angular/router';
 
 
 
@@ -9,6 +10,13 @@ import { NgbDatepickerModule, NgbOffcanvas, OffcanvasDismissReasons } from '@ng-
   styleUrls: ['./app-nav.component.css']
 })
 export class AppNavComponent {
+// 	ngOnInit(): void { }
+  
+//   // Fires on button click
+//   onBtnClick(){
+//     // Navigate to /products page
+//     this.router.navigate(['orders']);
+//   }
 	
   closeResult = '';
 
@@ -34,5 +42,11 @@ export class AppNavComponent {
 			return `with: ${reason}`;
 		}
 	}
+
+	
+
+	
+  
+
 
 }
