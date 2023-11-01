@@ -5,10 +5,10 @@
   </div>
   <div class="offcanvas-body">
     <div class="dropdown left-nav-menu">
-      <button class="btn col-12 align-items-center d-flex mb-2" type="button" [routerLink]="['../../admin/dashboard']">
+      <button class="btn col-12 align-items-center d-flex mb-2" type="button" [routerLink]="['../../admin/dashboard']" (click)="offcanvas.dismiss('Cross click')">
         <mat-icon class="material-icons-outlined">widgets</mat-icon>&nbsp; Dashboard
       </button>
-      <button class="btn col-12 align-items-center d-flex mb-2" type="button" [routerLink]="['../../admin/orders']">
+      <button class="btn col-12 align-items-center d-flex mb-2" type="button" [routerLink]="['../../admin/orders']" (click)="offcanvas.dismiss('Cross click')">
         <mat-icon class="material-icons-outlined">local_mall</mat-icon>&nbsp; Orders
       </button>
       <button class="btn col-12 align-items-center d-flex mb-2" type="button">
