@@ -28,7 +28,8 @@ import { OrdersComponent } from './orders/orders.component';
   imports: [
     CommonModule,
     AdminRoutingModule,
-    MatIconModule
-  ]
+    MatIconModule,
+  ],
+
 })
 export class AdminModule { }
