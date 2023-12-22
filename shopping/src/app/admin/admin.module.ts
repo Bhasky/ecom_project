@@ -21,7 +21,8 @@ import { OrdersComponent } from './orders/orders.component';
     DashboardComponent,
     AppHeaderComponent,
     AppNavComponent,
-    OrdersComponent,
+    OrdersComponent
+    
 
   ],
   // schemas: [ CUSTOM_ELEMENTS_SCHEMA],
@@ -29,6 +30,11 @@ import { OrdersComponent } from './orders/orders.component';
     CommonModule,
     AdminRoutingModule,
     MatIconModule,
+    OrdersComponent
+    
+  ],
+  exports:[
+    OrdersComponent
   ],
 
 })
