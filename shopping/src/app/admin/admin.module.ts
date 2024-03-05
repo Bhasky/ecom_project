@@ -10,6 +10,8 @@ import { AppHeaderComponent } from './app-header/app-header.component';
 import { AppNavComponent } from './app-nav/app-nav.component';
 import { MatIconModule } from '@angular/material/icon';
 import { OrdersComponent } from './orders/orders.component';
+import { MatPaginatorModule } from '@angular/material/paginator';
+import { MatTableModule } from '@angular/material/table';
 
 
 
@@ -30,7 +32,9 @@ import { OrdersComponent } from './orders/orders.component';
     CommonModule,
     AdminRoutingModule,
     MatIconModule,
-    OrdersComponent
+    MatPaginatorModule,
+    MatTableModule
+    
     
   ],
   exports:[
