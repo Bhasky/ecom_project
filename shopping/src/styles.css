@@ -34,3 +34,25 @@ body{
     background-color: var(--bodybg);
     height:100vh!important;
 }
+
+/*Table Styles*/
+.mat-mdc-table{
+    background-color:white!important;
+    border:1px solid #dddddd!important;
+    border-bottom:none!important;
+
+}
+.mat-mdc-row{
+    color:black!important;
+}
+.mat-mdc-header-row{
+    color:black!important;
+}
+.mat-mdc-paginator{
+    color:black!important;
+    background-color: inherit;
+}
+.mat-mdc-table mat-header-row.mat-mdc-header-row, .mat-mdc-table mat-row.mat-mdc-row, .mat-mdc-table mat-footer-row.mat-mdc-footer-cell{
+    border-bottom:1px solid #dddddd!important;
+}
+

@@ -5,6 +5,7 @@
     </div>
 
     <div class="col-12 p-0 m-0">
+      <input matInput (keyup)="applyFilter($event)" placeholder="Filter"/>
       <mat-table [dataSource]="dataSource" matSort>
 
         <!-- ID Column -->

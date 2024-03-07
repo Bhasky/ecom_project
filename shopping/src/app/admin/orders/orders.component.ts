@@ -42,9 +42,10 @@ export class OrdersComponent {
     this.dataSource.sort = this.sort;
   }
 
-  applyFilter(filterValue: string) {
-    filterValue = filterValue.trim(); // Remove whitespace
-    filterValue = filterValue.toLowerCase(); // Datasource defaults to lowercase matches
+  applyFilter(event: any) {
+    let filterValue = event.target.value; // Remove whitespace
+    filterValue = filterValue.trim(); // Datasource defaults to lowercase matches
+    filterValue.toLowerCase();
     this.dataSource.filter = filterValue;
   }
 
