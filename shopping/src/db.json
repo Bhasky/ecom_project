@@ -1,0 +1,10 @@
+{
+    "users":[
+    {
+    "uname":"admin",
+    "upassword":"admin",
+    "token":"dummy-token"
+    }
+]
+
+}

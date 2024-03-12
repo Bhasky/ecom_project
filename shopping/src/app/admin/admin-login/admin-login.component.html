@@ -6,17 +6,18 @@
             class="img-fluid col-12" alt="Sample image">
         </div>
         <div class="col-md-8 col-lg-6 col-xl-4 offset-xl-1 p-5 rounded border">
-          <form>
+          <form #myform="ngform" (ngSubmit)="login(myform)">
+            <!-- {{errormsg}} -->
             <!-- Email input -->
             <div class="form-outline mb-4">
-              <input type="email" id="form3Example3" class="form-control form-control-lg"
-                placeholder="Email ID" />
+              <input type="email" id="uname" class="form-control form-control-lg"
+                placeholder="Email ID" ngModel #myuname="ngModel" />
             </div>
   
             <!-- Password input -->
             <div class="form-outline mb-3">
-              <input type="password" id="form3Example4" class="form-control form-control-lg"
-                placeholder="Password" />
+              <input type="password" id="upassword" class="form-control form-control-lg"
+                placeholder="Password" ngModel #myupassword="ngModel"/>
             </div>
   
             <div class="d-flex justify-content-between align-items-center">
