@@ -25,7 +25,7 @@ export class AdminLoginComponent {
 this.adminuser.fetchAllUsers().subscribe({
 next:(response)=>
 {this.allUsers=response;
-let filterUser = user[] = this.allUsers.filter((eachUser)=>{
+let filterUser:user[] = this.allUsers.filter((eachUser)=>{
   return(eachUser.uname==loginUser.uname && eachUser.upassword==loginUser.upassword)
 });
 if(filterUser.length==1){
