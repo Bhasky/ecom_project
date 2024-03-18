@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 import { user } from 'src/admin.model';
 import { AdminuserService } from '../adminuser.service';
 import { Router } from '@angular/router';
+import {NgForm} from '@angular/forms';
+ 
+
+
+
 
 
 @Component({

@@ -12,6 +12,10 @@ import { MatIconModule } from '@angular/material/icon';
 import { OrdersComponent } from './orders/orders.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
+
 
 
 
@@ -33,7 +37,8 @@ import { MatTableModule } from '@angular/material/table';
     AdminRoutingModule,
     MatIconModule,
     MatPaginatorModule,
-    MatTableModule
+    MatTableModule,
+    FormsModule
     
     
   ],
