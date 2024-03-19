@@ -13,6 +13,8 @@ import { OrdersComponent } from './orders/orders.component';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import {HttpClientModule} from '@angular/common/http';
+
 
 
 
@@ -27,7 +29,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     DashboardComponent,
     AppHeaderComponent,
     AppNavComponent,
-    OrdersComponent
+    OrdersComponent,
+
     
 
   ],
@@ -38,12 +41,15 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     MatIconModule,
     MatPaginatorModule,
     MatTableModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule
+    
     
     
   ],
   exports:[
-    OrdersComponent
+    OrdersComponent,
+    
   ],
 
 })
