@@ -9,27 +9,46 @@
       <mat-table [dataSource]="dataSource" matSort>
 
         <!-- ID Column -->
-        <ng-container matColumnDef="id">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> ID </mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.id}} </mat-cell>
+        <ng-container matColumnDef="orderId">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Order ID </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.orderId}} </mat-cell>
         </ng-container>
     
         <!-- Progress Column -->
-        <ng-container matColumnDef="progress">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Progress </mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.progress}}% </mat-cell>
+        <ng-container matColumnDef="orderDate">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Date </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.orderDate}} </mat-cell>
+        </ng-container>
+
+        <!-- Progress Column -->
+        <ng-container matColumnDef="shipName">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.shipName}} </mat-cell>
         </ng-container>
     
         <!-- Name Column -->
-        <ng-container matColumnDef="name">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
-          <mat-cell *matCellDef="let row"> {{row.name}} </mat-cell>
+        <ng-container matColumnDef="shipAddress">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Address </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.shipAddress}}, {{row.shipState}},  {{row.shipPincode}}<br/> Mobile: {{row.shipMobileNo}}</mat-cell>
         </ng-container>
-    
+        
+
         <!-- Color Column -->
-        <ng-container matColumnDef="color">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Color </mat-header-cell>
-          <mat-cell *matCellDef="let row" [style.color]="row.color"> {{row.color}} </mat-cell>
+        <ng-container matColumnDef="amount">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Amount </mat-header-cell>
+          <mat-cell *matCellDef="let row"> <mat-icon style="font-size:16px; width:16px;" class="d-flex align-items-center">currency_rupee</mat-icon>{{row.amount}} </mat-cell>
+        </ng-container>
+
+        <!-- Color Column -->
+        <ng-container matColumnDef="paymentStatus">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Payment Status </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.paymentStatus}} </mat-cell>
+        </ng-container>
+
+        <!-- Color Column -->
+        <ng-container matColumnDef="orderStatus">
+          <mat-header-cell *matHeaderCellDef mat-sort-header> Order Status </mat-header-cell>
+          <mat-cell *matCellDef="let row"> {{row.orderStatus}} </mat-cell>
         </ng-container>
     
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>

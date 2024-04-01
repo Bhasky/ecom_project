@@ -7,12 +7,16 @@ import { user } from 'src/admin.model';
   providedIn: 'root'
 })
 export class AdminuserService {
-  baseUrl:string="";
+  baseUrl:string="http://localhost:3000/";
 
 
   constructor(private httpClient:HttpClient) { }
 
   fetchAllUsers():Observable<user[]>{
-    return this.httpClient.get<user[]>(this.baseUrl);
+    return this.httpClient.get<user[]>(this.baseUrl+"users");
+  }
+
+  fetchOrders():Observable<any[]>{
+    return this.httpClient.get<any[]>(this.baseUrl+"orders");
   }
 }
