@@ -60,7 +60,7 @@
         "shipMobileNo":"9000000000",
         "paymentStatus": "Online",
         "orderStatus":"Processing",
-        "amount":"1000"
+        "amount":"1500"
     },
     {
         "orderId": "HF10004",
@@ -96,7 +96,7 @@
         "shipMobileNo":"9000000000",
         "paymentStatus": "Online",
         "orderStatus":"Processing",
-        "amount":"1000"
+        "amount":"500"
     },
     {
         "orderId": "HF10006",
@@ -113,8 +113,8 @@
         "shipPincode":"600001",
         "shipMobileNo":"9000000000",
         "paymentStatus": "Online",
-        "orderStatus":"Processing",
-        "amount":"1000"
+        "orderStatus":"Delivered",
+        "amount":"1340"
     },
     {
         "orderId": "HF10007",
@@ -131,8 +131,8 @@
         "shipPincode":"600001",
         "shipMobileNo":"9000000000",
         "paymentStatus": "Online",
-        "orderStatus":"Processing",
-        "amount":"1000"
+        "orderStatus":"Shipped",
+        "amount":"1380.23"
     },
     {
         "orderId": "HF10008",
@@ -149,9 +149,9 @@
         "shipPincode":"600001",
         "shipMobileNo":"9000000000",
         "paymentStatus": "Online",
-        "orderStatus":"Processing",
+        "orderStatus":"Shipped",
         "amount":"1000"
-    }
+    },
     {
         "orderId": "HF10009",
         "orderDate":"22.03.24",
@@ -189,7 +189,7 @@
         "amount":"1000"
     },
     {
-        "orderId": "HF10011",
+        "orderId": "HF10012",
         "orderDate":"22.03.24",
         "orderTime":"22.03.24",
         "billingName": "test Name 1",
@@ -205,7 +205,80 @@
         "paymentStatus": "Online",
         "orderStatus":"Processing",
         "amount":"1000"
+    },
+    {
+        "orderId": "HF10013",
+        "orderDate":"22.03.24",
+        "orderTime":"22.03.24",
+        "billingName": "test Name 1",
+        "billingAddress":"test address",
+        "billingState":"tamilnadu",
+        "billingPincode":"600001",
+        "billingMobileNo":"9000000000",
+        "shipName":"hello",
+        "shipAddress":"test address",
+        "shipState":"tamilnadu",
+        "shipPincode":"600001",
+        "shipMobileNo":"9000000000",
+        "paymentStatus": "Online",
+        "orderStatus":"Processing",
+        "amount":"1000"
+    },
+    {
+        "orderId": "HF10014",
+        "orderDate":"22.03.24",
+        "orderTime":"22.03.24",
+        "billingName": "test Name 1",
+        "billingAddress":"test address",
+        "billingState":"tamilnadu",
+        "billingPincode":"600001",
+        "billingMobileNo":"9000000000",
+        "shipName":"hello",
+        "shipAddress":"test address",
+        "shipState":"tamilnadu",
+        "shipPincode":"600001",
+        "shipMobileNo":"9000000000",
+        "paymentStatus": "Online",
+        "orderStatus":"Cancel",
+        "amount":"1000"
+    },
+    {
+        "orderId": "HF10015",
+        "orderDate":"22.03.24",
+        "orderTime":"22.03.24",
+        "billingName": "test Name 1",
+        "billingAddress":"test address",
+        "billingState":"tamilnadu",
+        "billingPincode":"600001",
+        "billingMobileNo":"9000000000",
+        "shipName":"hello",
+        "shipAddress":"test address",
+        "shipState":"tamilnadu",
+        "shipPincode":"600001",
+        "shipMobileNo":"9000000000",
+        "paymentStatus": "Online",
+        "orderStatus":"Cancel",
+        "amount":"1000"
+    },
+    {
+        "orderId": "HF10016",
+        "orderDate":"22.03.24",
+        "orderTime":"22.03.24",
+        "billingName": "test Name 1",
+        "billingAddress":"test address",
+        "billingState":"tamilnadu",
+        "billingPincode":"600001",
+        "billingMobileNo":"9000000000",
+        "shipName":"hello",
+        "shipAddress":"test address",
+        "shipState":"tamilnadu",
+        "shipPincode":"600001",
+        "shipMobileNo":"9000000000",
+        "paymentStatus": "Online",
+        "orderStatus":"Delivered",
+        "amount":"1000"
     }
+
 ]
 
 }

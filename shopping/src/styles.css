@@ -6,6 +6,8 @@
     --orange: #f2713f;
     --bgGrey:#eaf0f7;
     --bodybg:#f8f9fa;
+    --white:#ffffff;
+    --lightGrey: #cccccc;
 }
 body{
     font-size:16px!important;
@@ -15,6 +17,23 @@ body{
     width: 300px !important;
 }
 
+/* Mat Table */
+.tableHeader{
+    background-color: var(--blue)!important;
+    color:var(--white);
+}
+.tableFooter{
+    background-color:var(--lightGrey)!important;
+}
+.mat-mdc-paginator .mat-mdc-select-value, .mat-mdc-select-arrow{
+color:#000000!important;
+}
+.mdc-notched-outline{
+border:1px solid #000000!important;
+}
+.mat-mdc-option.mdc-list-item--selected:not(.mdc-list-item--disabled) .mdc-list-item__primary-text{
+    color:#ffffff!important;
+}
 
 
 /*Global Styles*/

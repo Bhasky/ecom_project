@@ -28,7 +28,7 @@ export class OrdersComponent {
 
   constructor(private adminuser:AdminuserService) {
     // Create 100 users
-    const users: UserData[] = [];
+    // const users: UserData[] = [];
     // for (let i = 1; i <= 100; i++) { users.push(createNewUser(i)); }
 
     // Assign the data to the data source for the table to render
@@ -40,7 +40,9 @@ export class OrdersComponent {
       next:(response)=>
       {
         console.log(response)
-        this.dataSource = response;
+        this.dataSource = new MatTableDataSource(response);
+        this.dataSource.paginator = this.paginator;
+        this.dataSource.sort = this.sort;
       },
       error:(err)=>{console.log(err)}
       })
@@ -64,37 +66,37 @@ export class OrdersComponent {
 
 }
 
-function createNewUser(id: number): UserData {
-  const name =
-      NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
-      NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
+// function createNewUser(id: number): UserData {
+//   // const name =
+//   //     NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
+//   //     NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
 
-  // return {
-  //   id: id.toString(),
-  //   name: name,
-  //   address: Math.round(Math.random() * 100).toString(),
-  //   mobile: COLORS[Math.round(Math.random() * (COLORS.length - 1))]
-  // };
-  return{
-    id: 'a',
-    shipName: 'test',
-    shipAddress: 'test address',
-    shipState:'processing',
-    shipPincode:'processing',
-    shipMobileNo: '900000000',
-    amount:'1234',
-    paymentStatus:'paid',
-    orderStatus:'processing',
+//   // return {
+//   //   id: id.toString(),
+//   //   name: name,
+//   //   address: Math.round(Math.random() * 100).toString(),
+//   //   mobile: COLORS[Math.round(Math.random() * (COLORS.length - 1))]
+//   // };
+//   return{
+//     id: 'a',
+//     shipName: 'test',
+//     shipAddress: 'test address',
+//     shipState:'processing',
+//     shipPincode:'processing',
+//     shipMobileNo: '900000000',
+//     amount:'1234',
+//     paymentStatus:'paid',
+//     orderStatus:'processing',
     
-  };
-}
+//   };
+// }
 
 /** Constants used to fill up our data base. */
-const COLORS = ['maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple',
-  'fuchsia', 'lime', 'teal', 'aqua', 'blue', 'navy', 'black', 'gray'];
-const NAMES = ['Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack',
-  'Charlotte', 'Theodore', 'Isla', 'Oliver', 'Isabella', 'Jasper',
-  'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'];
+// const COLORS = ['maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple',
+//   'fuchsia', 'lime', 'teal', 'aqua', 'blue', 'navy', 'black', 'gray'];
+// const NAMES = ['Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack',
+//   'Charlotte', 'Theodore', 'Isla', 'Oliver', 'Isabella', 'Jasper',
+//   'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'];
 
 export interface UserData {
   id: string;

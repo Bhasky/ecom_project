@@ -5,49 +5,52 @@
     </div>
 
     <div class="col-12 p-0 m-0">
-      <input matInput (keyup)="applyFilter($event)" placeholder="Filter"/>
-      <mat-table [dataSource]="dataSource" matSort>
+      
+      
 
+      <input matInput (keyup)="applyFilter($event)" placeholder="Search" class="form-control mb-3"/>
+
+      <mat-table [dataSource]="dataSource" matSort>
         <!-- ID Column -->
         <ng-container matColumnDef="orderId">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Order ID </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader"> Order ID </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.orderId}} </mat-cell>
         </ng-container>
     
         <!-- Progress Column -->
         <ng-container matColumnDef="orderDate">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Date </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader"> Date </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.orderDate}} </mat-cell>
         </ng-container>
 
         <!-- Progress Column -->
         <ng-container matColumnDef="shipName">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Name </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader"> Name </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.shipName}} </mat-cell>
         </ng-container>
     
         <!-- Name Column -->
         <ng-container matColumnDef="shipAddress">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Address </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader"> Address </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.shipAddress}}, {{row.shipState}},  {{row.shipPincode}}<br/> Mobile: {{row.shipMobileNo}}</mat-cell>
         </ng-container>
         
 
         <!-- Color Column -->
         <ng-container matColumnDef="amount">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Amount </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader"> Amount </mat-header-cell>
           <mat-cell *matCellDef="let row"> <mat-icon style="font-size:16px; width:16px;" class="d-flex align-items-center">currency_rupee</mat-icon>{{row.amount}} </mat-cell>
         </ng-container>
 
         <!-- Color Column -->
         <ng-container matColumnDef="paymentStatus">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Payment Status </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader"> Payment Status </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.paymentStatus}} </mat-cell>
         </ng-container>
 
         <!-- Color Column -->
         <ng-container matColumnDef="orderStatus">
-          <mat-header-cell *matHeaderCellDef mat-sort-header> Order Status </mat-header-cell>
+          <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader"> Order Status </mat-header-cell>
           <mat-cell *matCellDef="let row"> {{row.orderStatus}} </mat-cell>
         </ng-container>
     
@@ -56,7 +59,7 @@
         </mat-row>
       </mat-table>
     
-      <mat-paginator [pageSizeOptions]="[5, 10, 25, 100]"></mat-paginator>
+      <mat-paginator [pageSizeOptions]="[15, 25, 50, 100]" class="tableFooter"></mat-paginator>
     </div>
 
    
