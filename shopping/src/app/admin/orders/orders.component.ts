@@ -17,7 +17,7 @@ export class OrdersComponent {
 
   orders: any[]=[];
 
-  displayedColumns = ['orderId', 'orderDate', 'shipName', 'shipAddress', 'amount', 'paymentStatus', 'orderStatus'];
+  displayedColumns = ['orderId', 'orderDate', 'shipName', 'shipAddress', 'amount', 'paymentStatus', 'orderStatus', 'action'];
   dataSource: any;
 
 
