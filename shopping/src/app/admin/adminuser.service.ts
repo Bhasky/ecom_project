@@ -19,4 +19,22 @@ export class AdminuserService {
   fetchOrders():Observable<any[]>{
     return this.httpClient.get<any[]>(this.baseUrl+"orders");
   }
+
+  storeToken(user:user):void{
+    sessionStorage.setItem("userInfo",JSON.stringify(user))
+  }
+
+  removeToken(){
+    sessionStorage.removeItem("userInfo");
+  }
+
+  fetchToken(){
+    let userInfoString= sessionStorage.getItem("userInfo");
+    let userInfo;
+    if(userInfoString!=null)
+    {
+      userInfo=JSON.parse(userInfoString);
+    }
+    return userInfo;
+  }
 }

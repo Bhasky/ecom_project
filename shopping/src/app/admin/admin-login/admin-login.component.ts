@@ -34,7 +34,7 @@ let filterUser:user[] = this.allUsers.filter((eachUser)=>{
   return(eachUser.uname==loginUser.uname && eachUser.upassword==loginUser.upassword)
 });
 if(filterUser.length==1){
-  this.router.navigate(['orders'])
+  this.router.navigate(['admin/orders']);
 }
 else{
   this.errormessage="Invalid Username & password";
