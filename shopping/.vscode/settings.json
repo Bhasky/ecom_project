@@ -1,11 +1,13 @@
 {
     "cSpell.words": [
+        "Auth",
         "component",
         "logo",
         "mymessage",
         "Observable",
         "paginator",
         "router",
+        "Service",
         "sort"
     ]
 }
