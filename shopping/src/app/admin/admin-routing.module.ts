@@ -4,6 +4,7 @@ import { AdminPagesComponent } from './admin-pages/admin-pages.component';
 import { AdminLoginComponent } from './admin-login/admin-login.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { OrdersComponent } from './orders/orders.component';
+import { OrderDetailsComponent } from './orders/order-details/order-details.component';
 
 const routes: Routes = [
   {
@@ -18,6 +19,7 @@ const routes: Routes = [
   },
   {path: 'dashboard', component: DashboardComponent,},
   {path: 'orders', component: OrdersComponent,},
+  {path: 'orderDetails', component: OrderDetailsComponent,},
 ];
 
 @NgModule({

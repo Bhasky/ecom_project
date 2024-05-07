@@ -5,6 +5,7 @@ import {MatTableDataSource, MatTableModule} from '@angular/material/table';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { AdminuserService } from '../adminuser.service';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -26,7 +27,7 @@ export class OrdersComponent {
   @ViewChild(MatSort)
   sort!: MatSort;
 
-  constructor(private adminuser:AdminuserService) {
+  constructor(private adminuser:AdminuserService, private router: Router) {
     // Create 100 users
     // const users: UserData[] = [];
     // for (let i = 1; i <= 100; i++) { users.push(createNewUser(i)); }
@@ -64,39 +65,14 @@ export class OrdersComponent {
     this.dataSource.filter = filterValue;
   }
 
+  
+
+  orderDetails(orderDetailID:any){
+    this.router.navigate(['orderDetails',orderDetailID]);
+  }
+
 }
 
-// function createNewUser(id: number): UserData {
-//   // const name =
-//   //     NAMES[Math.round(Math.random() * (NAMES.length - 1))] + ' ' +
-//   //     NAMES[Math.round(Math.random() * (NAMES.length - 1))].charAt(0) + '.';
-
-//   // return {
-//   //   id: id.toString(),
-//   //   name: name,
-//   //   address: Math.round(Math.random() * 100).toString(),
-//   //   mobile: COLORS[Math.round(Math.random() * (COLORS.length - 1))]
-//   // };
-//   return{
-//     id: 'a',
-//     shipName: 'test',
-//     shipAddress: 'test address',
-//     shipState:'processing',
-//     shipPincode:'processing',
-//     shipMobileNo: '900000000',
-//     amount:'1234',
-//     paymentStatus:'paid',
-//     orderStatus:'processing',
-    
-//   };
-// }
-
-/** Constants used to fill up our data base. */
-// const COLORS = ['maroon', 'red', 'orange', 'yellow', 'olive', 'green', 'purple',
-//   'fuchsia', 'lime', 'teal', 'aqua', 'blue', 'navy', 'black', 'gray'];
-// const NAMES = ['Maia', 'Asher', 'Olivia', 'Atticus', 'Amelia', 'Jack',
-//   'Charlotte', 'Theodore', 'Isla', 'Oliver', 'Isabella', 'Jasper',
-//   'Cora', 'Levi', 'Violet', 'Arthur', 'Mia', 'Thomas', 'Elizabeth'];
 
 export interface UserData {
   id: string;

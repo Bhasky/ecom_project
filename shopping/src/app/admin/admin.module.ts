@@ -14,6 +14,7 @@ import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatTableModule } from '@angular/material/table';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http';
+import { OrderDetailsComponent } from './orders/order-details/order-details.component';
 
 
 
@@ -30,6 +31,7 @@ import {HttpClientModule} from '@angular/common/http';
     AppHeaderComponent,
     AppNavComponent,
     OrdersComponent,
+    OrderDetailsComponent,
 
     
 

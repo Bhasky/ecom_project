@@ -56,7 +56,7 @@
 
         <ng-container matColumnDef="action">
           <mat-header-cell *matHeaderCellDef mat-sort-header class="tableHeader">  Details </mat-header-cell>
-          <mat-cell *matCellDef="let row"> <button class="btn btn-primary">View Details</button></mat-cell>
+          <mat-cell *matCellDef="let row"> <button class="btn btn-primary" (click)="orderDetails(row.orderId)">View Details</button></mat-cell>
         </ng-container>
     
         <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
